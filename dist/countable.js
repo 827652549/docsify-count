@@ -1,7 +1,8 @@
 var defaultOptions = {
   countable:true,
   fontsize:'0.9em',
-  color:'rgb(90,90,90)'
+  color:'rgb(90,90,90)',
+  language:'english'
 };
 
 // Docsify plugin functions
@@ -13,10 +14,15 @@ function plugin(hook, vm) {
     return content;
   });
   hook.afterEach(function (html, next) {
+    let str = wordsCount+' words';
+    if (defaultOptions.language==='chinese'){
+      str=wordsCount+' 字';
+    }
+
     next(`<div><span style="
     float: right;font-size: ${defaultOptions.fontsize};
    color:${defaultOptions.color};
-">全文${wordsCount}字</span><div style="clear: both"></div></div>` + html)
+">${str}</span><div style="clear: both"></div></div>` + html)
   });
 }
 
