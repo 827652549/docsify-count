@@ -1,6 +1,6 @@
 {
   "name": "docsify-count",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a countable plugin for markdown",
   "main": "index.js",
   "scripts": {
