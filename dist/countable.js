@@ -1,5 +1,7 @@
 var defaultOptions = {
-  countable:true
+  countable:true,
+  fontsize:'0.9em',
+  color:'rgb(90,90,90)'
 };
 
 // Docsify plugin functions
@@ -12,8 +14,8 @@ function plugin(hook, vm) {
   });
   hook.afterEach(function (html, next) {
     next(`<div><span style="
-    float: right;font-size: 0.9em;
-   color:rgb(90,90,90);
+    float: right;font-size: ${defaultOptions.fontsize};
+   color:${defaultOptions.color};
 ">全文${wordsCount}字</span><div style="clear: both"></div></div>` + html)
   });
 }
