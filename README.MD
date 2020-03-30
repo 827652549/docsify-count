@@ -8,12 +8,12 @@
 
 This is a plugin to add word count for markdown files of docsify.
 
-*这是一款为docsify提供文字统计的插件*
+> *这是一款为docsify提供文字统计的插件*
 
 
 It only counts Chinese characters and English words excludes special characters like `*`、`-`、……  in markdown file.
 
-*它提供了统计中文汉字和英文单词的功能，并且排除了一些markdown语法的特殊字符例如`*`、`-`等*
+> *它提供了统计中文汉字和英文单词的功能，并且排除了一些markdown语法的特殊字符例如`*`、`-`等*
 
 <img alt="show count.english" src="https://s1.ax1x.com/2020/03/30/GuUeAK.jpg" width="60%">
 
