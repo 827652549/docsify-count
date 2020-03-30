@@ -1,0 +1,17 @@
+{
+  "name": "docsify-count",
+  "version": "1.0.0",
+  "description": "a countable plugin for markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "countable",
+    "words",
+    "docsify",
+    "plugin"
+  ],
+  "author": "Junking",
+  "license": "MIT"
+}
