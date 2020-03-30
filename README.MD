@@ -18,7 +18,7 @@ It excludes special characters like `*`、`-`、……  in markdown file.
 
 Add JS
 ```html
-<script src="https://unpkg.com/docsify-count@1.0.0/dist/countable.js"></script>
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
 ```
 
 Add settings

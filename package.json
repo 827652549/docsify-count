@@ -6,12 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/827652549/docsify-count.git"
+  },
   "keywords": [
     "countable",
     "words",
     "docsify",
     "plugin"
   ],
+  "bugs": {
+    "url": "https://github.com/mrpotatoes/docsify-count/issues"
+  },
+  "homepage": "https://github.com/mrpotatoes/docsify-count",
   "author": "Junking",
   "license": "MIT"
 }
