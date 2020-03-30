@@ -21,5 +21,5 @@ function plugin(hook, vm) {
 }
 
 // Docsify plugin options
-window.$docsify['countable'] = Object.assign(defaultOptions, window.$docsify['countable']);
+window.$docsify['count'] = Object.assign(defaultOptions, window.$docsify['count']);
 window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins);
