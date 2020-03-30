@@ -9,7 +9,7 @@ function plugin(hook, vm) {
   let wordsCount;
   hook.beforeEach(function (content) {
     // 每次开始解析 Markdown 内容时调用
-    wordsCount = content.match(/[^\s,\#,\*,\-,\|,\~,\[,\],\(,\),\>,\<,\!,\?]/g).length;
+    wordsCount = content.match(/([\u4e00-\u9fa5]+?|[a-zA-Z0-9]+)/g).length;
     return content;
   });
   hook.afterEach(function (html, next) {
