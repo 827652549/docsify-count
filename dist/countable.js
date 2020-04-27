@@ -1,6 +1,7 @@
 //default values
 var defaultOptions = {
     countable: true,
+    position: 'left',
     fontsize: '0.9em',
     color: 'rgb(90,90,90)',
     language: 'english'
@@ -26,7 +27,8 @@ function plugin(hook, vm) {
             `
         <div>
             <span style="
-                  float: right;font-size: ${defaultOptions.fontsize};
+                  float: ${defaultOptions.position === 'left' ? 'left' : 'right'};
+                  font-size: ${defaultOptions.fontsize};
                   color:${defaultOptions.color};">
             ${str}
             </span>
