@@ -1,11 +1,11 @@
 //default values
 var defaultOptions = {
     countable: true,
-    position: 'left',
-    fontsize: '0.9em',
-    color: 'rgb(90,90,90)',
-    language: 'english'
-};
+    float: "right",
+    fontsize: "0.9em",
+    color: "rgb(90,90,90)",
+    language: "english",
+}
 
 // Docsify plugin functions
 function plugin(hook, vm) {
@@ -27,7 +27,7 @@ function plugin(hook, vm) {
             `
         <div>
             <span style="
-                  float: ${defaultOptions.position === 'left' ? 'left' : 'right'};
+                  float: ${defaultOptions.float === 'right' ? 'right' : 'left'};
                   font-size: ${defaultOptions.fontsize};
                   color:${defaultOptions.color};">
             ${str}
