@@ -34,6 +34,7 @@ Add settings
 window.$docsify = {
   count:{
     countable: true,
+    position: 'top',
     float: 'right',
     fontsize:'0.9em',
     color:'rgb(90,90,90)',
@@ -42,4 +43,4 @@ window.$docsify = {
 }
 ```
 
-> `float` valid value: 'right'(default) or 'left'
+> `float` valid value: 'right'(default) or 'left', `position` valid value: 'top'(default) or 'bottom'
