@@ -2,6 +2,7 @@
 var defaultOptions = {
     countable: true,
     position: 'top',
+    margin: '10px',
     float: "right",
     fontsize: "0.9em",
     color: "rgb(90,90,90)",
@@ -18,21 +19,25 @@ function plugin(hook, vm) {
     });
     hook.afterEach(function (html, next) {
         let str = wordsCount + ' words';
+        let readTime = Math.ceil(wordsCount / 400) + " min";
         //Determine whether to use the Chinese style according to the attribute "language"
         if (defaultOptions.language === 'chinese') {
             str = wordsCount + ' 字';
+            readTime = Math.ceil(wordsCount / 400) + " 分钟"
         }
 
         //add html string
         next(
             `
         ${defaultOptions.position === 'bottom' ? html : ''}
-        <div>
+        <div style="margin-${defaultOptions.position ? 'bottom' : 'top'}: ${defaultOptions.margin};">
             <span style="
                   float: ${defaultOptions.float === 'right' ? 'right' : 'left'};
                   font-size: ${defaultOptions.fontsize};
                   color:${defaultOptions.color};">
             ${str}
+            &nbsp; | &nbsp;
+            ${readTime}
             </span>
             <div style="clear: both"></div>
         </div>
