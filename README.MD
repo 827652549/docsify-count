@@ -39,7 +39,8 @@ window.$docsify = {
     float: 'right',
     fontsize:'0.9em',
     color:'rgb(90,90,90)',
-    language:'chinese'
+    language:'chinese',
+    isExpected: true
   }
 }
 ```
@@ -52,3 +53,4 @@ window.$docsify = {
 | fontsize | string | 设置字体大小 Set font size | '0.9em' |
 | color | string | 设置颜色 Set color | 'rgb(90,90,90)' |
 | language | string | 设置语言 Set language | 'english'(默认值Default) / 'chinese' |
+| isExpected | boolean | 是否显示预计阅读时长 Display the reading time or not | true(默认值Default) / false |
