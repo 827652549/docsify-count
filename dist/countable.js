@@ -12,6 +12,9 @@ var defaultOptions = {
 
 // Docsify plugin functions
 function plugin(hook, vm) {
+    if (!defaultOptions.countable) {
+        return
+    }
     let wordsCount
     hook.beforeEach(function (content) {
         // Match regex every time you start parsing .md

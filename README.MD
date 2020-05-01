@@ -6,6 +6,8 @@
   <code>docsify-count</code>
 </p>
 
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/docsify-count/badge)](https://www.jsdelivr.com/package/npm/docsify-count)
+
 This is a plugin to add word count for markdown files of docsify.
 
 > *这是一款为docsify提供文字统计的插件*
@@ -25,7 +27,11 @@ And you can set count.language 'chinese'/'english'
 Add JS
 
 ```html
-<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+<script src="//unpkg.com/docsify-count/dist/countable.min.js"></script>
+
+or
+
+<script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
 ```
 
 Add settings
@@ -47,6 +53,7 @@ window.$docsify = {
 
 | 属性名Attribute | 类型Type | 解释Description | 可选值Value |
 | --- | --- | --- | --- |
+| countable | boolean | 设置字符统计展示与否 Set display this plugin or not | true(默认值Default) / false |
 | position | string | 设置展示位置 Set display position | 'top'(默认值Default) / 'bottom' |
 | margin | string | 设置与邻近DOM的距离 Set margin to the near DOM element | '10px' |
 | float | string | 设置元素对齐 Set alignment | 'right'(默认值Default) / 'top' |
