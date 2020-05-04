@@ -46,6 +46,10 @@ window.$docsify = {
     fontsize:'0.9em',
     color:'rgb(90,90,90)',
     language:'chinese',
+    localization: {
+      words: "",
+      minute: ""
+    },
     isExpected: true
   }
 }
@@ -60,4 +64,7 @@ window.$docsify = {
 | fontsize | string | 设置字体大小 Set font size | '0.9em' |
 | color | string | 设置颜色 Set color | 'rgb(90,90,90)' |
 | language | string | 设置语言 Set language | 'english'(默认值Default) / 'chinese' |
+| localization | Object | 支持本土化 Support localization | `words: ""`, `minute: ""` |
 | isExpected | boolean | 是否显示预计阅读时长 Display the reading time or not | true(默认值Default) / false |
+
+> `localization`的优先级高于`language`，如果`localization`的`words`和`minute`属性值不为空，则会取代`language`的作用。The priority of `localization` is higher than `language`'s. Thus, if the length of the value of `localization`'s attributes(`words`, `minutes`) were not equal with `0`, the function of `language` would be replaced.
